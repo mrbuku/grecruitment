@@ -685,10 +685,17 @@ h6 {
         padding-bottom: 50%;
     }
 
+@media (min-width: 768px) {
+
+.hero:before {
+            padding-bottom: 30%
+    }
+        }
+
 @media (min-width: 1025px) {
 
 .hero:before {
-            padding-bottom: 25%
+            padding-bottom: 18%
     }
         }
 
@@ -739,6 +746,10 @@ h6 {
   .container {
     max-width: 1441px;
   }
+}
+
+.pointer-events-none {
+  pointer-events: none;
 }
 
 .fixed {
@@ -818,6 +829,14 @@ h6 {
   margin-bottom: 20px;
 }
 
+.ml-3 {
+  margin-left: 15px;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -842,6 +861,10 @@ h6 {
   height: 16px;
 }
 
+.h-70 {
+  height: 70px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -862,8 +885,20 @@ h6 {
   width: 100%;
 }
 
+.w-50 {
+  width: 50px;
+}
+
+.min-w-50 {
+  min-width: 50px;
+}
+
 .flex-auto {
   flex: 1 1 auto;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 
 .grid-cols-1 {
@@ -876,6 +911,10 @@ h6 {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .overflow-hidden {
@@ -908,6 +947,16 @@ h6 {
 .px-6 {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.py-20 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.px-4 {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .pt-8 {
@@ -991,6 +1040,25 @@ h6 {
     }
         }
 
+.column {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+@media (min-width: 560px) {
+    .column {
+            padding-left: 10px;
+            padding-right: 10px
+    }
+        }
+
+@media (min-width: 1025px) {
+    .column {
+            padding-left: 10px;
+            padding-right: 10px
+    }
+        }
+
 .object-cover-absolute {
   position: absolute;
   top: 0;
@@ -1059,6 +1127,10 @@ h6 {
 
 @media (min-width: 560px) {
 
+  .md\:ml-4 {
+    margin-left: 20px;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1070,8 +1142,8 @@ h6 {
 
 @media (min-width: 768px) {
 
-  .lg\:w-6\/12 {
-    width: 50%;
+  .lg\:w-8\/12 {
+    width: 66.66666667%;
   }
 
   .lg\:px-8 {
@@ -1082,13 +1154,27 @@ h6 {
 
 @media (min-width: 1025px) {
 
+  .xl\:hidden {
+    display: none;
+  }
+
   .xl\:w-6\/12 {
     width: 50%;
+  }
+
+  .xl\:py-30 {
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 
   .xl\:py-20 {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  .xl\:px-6 {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
