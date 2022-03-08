@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'TTHoves';
+    src: url('../fonts/tthoves/tthoves-bold.eot');
+    src: url('../fonts/tthoves/tthoves-bold.eot?#iefix')
+    format('embedded-opentype'),
+    url('../fonts/tthoves/tthoves-bold.woff2') format('woff2'),
+    url('../fonts/tthoves/tthoves-bold.woff') format('woff'),
+    url('../fonts/tthoves/tthoves-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTHoves';
+    src: url('../fonts/tthoves/tthoves-medium.eot');
+    src: url('../fonts/tthoves/tthoves-medium.eot?#iefix')
+    format('embedded-opentype'),
+    url('../fonts/tthoves/tthoves-medium.woff2') format('woff2'),
+    url('../fonts/tthoves/tthoves-medium.woff') format('woff'),
+    url('../fonts/tthoves/tthoves-medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTHoves';
+    src: url('../fonts/tthoves/tthoves-regular.eot');
+    src: url('../fonts/tthoves/tthoves-regular.eot?#iefix')
+    format('embedded-opentype'),
+    url('../fonts/tthoves/tthoves-regular.woff2') format('woff2'),
+    url('../fonts/tthoves/tthoves-regular.woff') format('woff'),
+    url('../fonts/tthoves/tthoves-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    @apply font-ttHoves;
+}
+
+.heading-xl {
+    font-size: 38px;
+    letter-spacing: -0.8px;
+    line-height: 1.21;
+    font-weight: 700;
+
+    @screen md {
+        font-size: 52px;
+    }
+
+    @screen xl {
+        font-size: 64px;
+        letter-spacing: -0.6px;
+        line-height: 1.156;
+    }
+}
+
+.heading-l {
+    font-size: 2.375rem; /* 38px */
+    letter-spacing: -0.05rem; /* -1.04 */
+    line-height: 1.21;
+    font-weight: 700;
+
+    @screen md {
+        font-size: 2.75rem; /* 44px */
+    }
+
+    @screen xl {
+        font-size: 52px;
+        letter-spacing: -0.5px;
+        line-height: 1.115;
+    }
+}
+
+.heading {
+    font-size: 30px;
+    line-height: 1.21;
+    font-weight: 600;
+
+    @screen lg {
+        font-size: 2.375rem;
+        line-height: 1.21;
+        font-weight: 600;
+    }
+}
+
+.heading-s {
+    font-size: 1.5rem; /* 24px */
+    letter-spacing: -0.03125rem; /* -0.5 */
+    line-height: 1.083;
+    font-weight: 700;
+
+    @screen md {
+        font-size: 1.75rem; /* 28px */
+    }
+
+    @screen xl {
+        font-size: 2rem; /* 32px */
+        letter-spacing: -0.01875rem; /* -0.3 */
+        line-height: 1.115;
+    }
+}
+
+.heading-xs {
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    line-height: 1.083;
+    font-weight: 700;
+
+    @screen md {
+        font-size: 22px;
+    }
+
+    @screen xl {
+        font-size: 24px;
+        letter-spacing: -0.3px;
+        line-height: 1.115;
+    }
+}
+
+.copy-l {
+    font-size: 18px;
+    letter-spacing: -0.14px;
+    line-height: 1.2;
+    font-weight: 400;
+
+    @screen md {
+        font-size: 18px;
+        letter-spacing: 0;
+    }
+
+    @screen xl {
+        font-size: 20px;
+        line-height: 1.33;
+    }
+}
+
+.copy {
+    font-size: 14px;
+    line-height: 1.857;
+    font-weight: 400;
+
+    @screen md {
+        font-size: 16px;
+    }
+
+    @screen xl {
+        font-size: 18px;
+        line-height: 1.78;
+    }
+}
+
+.copy-s {
+    font-size: 12px;
+    line-height: 1.3;
+    font-weight: 400;
+
+    @screen md {
+        font-size: 14px;
+    }
+
+    @screen xl {
+        font-size: 16px;
+        letter-spacing: -0.1px;
+        line-height: 1.5;
+    }
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wysiwyg {
+    @apply w-full;
+
+    > * + * {
+        @apply mt-3;
+
+        @screen xl {
+            @apply mt-4;
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    }
+
+    a {
+        @apply underline inline;
+    }
+
+    ul,
+    ol {
+        @apply pl-6;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+    li {
+        &:not(:last-of-type) {
+             @apply mb-2;
+        }
+    }
+}

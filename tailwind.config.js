@@ -32,6 +32,7 @@ module.exports = {
             mischka: '#E6E4EB',
             indigo: '#5856D6',
             gondola: '#050305',
+            mirage: '#121213',
             'port-gore': '#2D254E',
             'athens-gray': '#F8F8F9',
             'error-red': '#fa496a',
@@ -356,6 +357,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Inter', 'Gilroy', 'Nunito', ...defaultTheme.fontFamily.sans],
+                ttHoves: ['TTHoves', 'Segoe UI', 'Helvetica Neue', 'Arial', ...defaultTheme.fontFamily.sans]
             },
             lineHeight: {
                 0: 0,

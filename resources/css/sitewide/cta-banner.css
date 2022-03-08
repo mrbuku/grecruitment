@@ -1,0 +1,15 @@
+.cta-banner {
+    &:before,
+    &:after {
+        content: '';
+    }
+
+    &:after {
+         display: block;
+         position: absolute;
+         top: 0;
+         height: 100%;
+         width: 100%;
+         background: linear-gradient(0, #050305 0%, rgba(5, 3, 5, 0.37) 50%);
+    }
+}
