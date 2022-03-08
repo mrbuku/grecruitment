@@ -1,0 +1,54 @@
+@layer utilities {
+    .container {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+
+        @screen md {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        @screen xl {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+    }
+}
+
+@layer utilities {
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+
+        @screen md {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+
+        @screen xl {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+    }
+}
+
+@layer utilities {
+    .column {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        @screen md {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        @screen xl {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}

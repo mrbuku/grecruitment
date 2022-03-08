@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: theme('colors.black');
+    background: theme('colors.gondola');
+}
+
+button,
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+
+    &:focus {
+         outline: 0;
+     }
+}
+
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+
+img {
+    display: block;
+    border: none;
+    max-width: 100%;
+    height: auto;
+    border-width: 0;
+}
+
+img:not([src]) {
+    visibility: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: revert;
+    font-weight: revert;
+}

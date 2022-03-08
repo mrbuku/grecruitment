@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mix = require('laravel-mix')
 
 /*
  |--------------------------------------------------------------------------
@@ -11,7 +11,21 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+mix.webpackConfig({
+    module: {
+        rules: [
+            {
+                test: /\.svg$/,
+                loader: 'vue-svg-loader',
+                options: {
+                    postcss: [require('postcss-cssnext')()],
+                },
+            },
+        ],
+    },
+    stats: {
+        children: false,
+    },
+})
+
+mix.js('resources/js/app.js', 'public/js').postCss('resources/css/app.css', 'public/css', [require('postcss-mixins'), require('tailwindcss'), require('postcss-nested')])

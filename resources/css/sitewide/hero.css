@@ -1,0 +1,25 @@
+.hero {
+    position: relative;
+    width: 100%;
+
+    &:before {
+        content: '';
+        display: block;
+        height: 0;
+        padding-bottom: 50%;
+
+        @screen xl {
+            padding-bottom: 25%;
+        }
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(0, #050305 0%, rgba(5, 3, 5, 0.37) 50%);
+    }
+}
