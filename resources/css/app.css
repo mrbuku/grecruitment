@@ -7,6 +7,7 @@
 
 @import 'button/button';
 
+@import 'sitewide/header';
 @import 'sitewide/hero';
 @import 'sitewide/cta-banner';
 

@@ -1,4 +1,4 @@
-<header class="site-header fixed w-full z-100">
+<header class="site-header w-full z-100">
     <nav class="flex justify-between h-70 px-4 xl:px-6">
         <div class="flex">
             <div class="flex-shrink-0 flex items-center">

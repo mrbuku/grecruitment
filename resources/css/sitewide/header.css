@@ -1,0 +1,11 @@
+.site-header {
+    width: 100%;
+    background: theme('colors.gondola');
+}
+
+body.home {
+    .site-header {
+        position: fixed;
+        background: transparent;
+    }
+}

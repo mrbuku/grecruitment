@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Home')
+@section('body_css', 'home bg-gondola')
 
 @section('body')
 
@@ -16,7 +17,7 @@
     </section>
 
     <!-- featured -->
-    <section class="featured-companies py-10">
+    <section class="featured-companies bg-gondola py-10">
         <div class="container">
             <h4 class="heading-xs text-white mb-4">{{ __('Popular studios') }}</h4>
 
@@ -87,7 +88,7 @@
     </section>
 
     <!-- testimonials -->
-    <section class="testimonials py-10 mb-10">
+    <section class="testimonials bg-gondola py-10 mb-10">
         <div class="container">
             <div class="row flex flex-wrap">
 
@@ -143,7 +144,7 @@
     </section>
 
     <!-- cta banner -->
-    <section class="cta-banner w-full relative py-20">
+    <section class="cta-banner bg-gondola w-full relative py-20">
         <img src="{{ asset('img/7445.jpg')  }}" class="object-cover-absolute object-cover-absolute--top" alt="hero image">
         <div class="w-full relative z-100">
             <div class="container">
